@@ -1,14 +1,14 @@
 n = int(input('Digite um número inteiro: '))
 
-um = n *1 
-dois = n*2 
-tres = n*3 
-quatro = n*4 
-cinco = n*5 
-seis = n*6
-sete = n*7 
-oito = n*8
-nove = n*9 
-dez = n*10 
-
-print('Tabuada: {} - {} - {} - {} - {} - {} - {} - {} - {} - {} '.format(um, dois, tres, quatro, cinco, seis, sete, oito, nove, dez))
+print('-' *12)
+print('{} x {:2} = {}'. format(n, 1, n*1))
+print('{} x {:2} = {}'. format(n, 2, n*2))
+print('{} x {:2} = {}'. format(n, 3, n*3))
+print('{} x {:2} = {}'. format(n, 4, n*4))
+print('{} x {:2} = {}'. format(n, 5, n*5))
+print('{} x {:2} = {}'. format(n, 6, n*6))
+print('{} x {:2} = {}'. format(n, 7, n*7))
+print('{} x {:2} = {}'. format(n, 8, n*8))
+print('{} x {:2} = {}'. format(n, 9, n*9))
+print('{} x {:2} = {}'. format(n, 10, n*10))
+print('-' * 12)

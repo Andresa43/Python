@@ -1,5 +1,3 @@
 n = int(input('Digite um número: '))
-ante = n - 1 
-suce = n + 1 
 
-print('O número {} tem sucessor {} e antecessor {}'.format(n, suce, ante))
+print('O número {} tem sucessor {} e antecessor {}'.format(n, (n+1), (n-1)))
