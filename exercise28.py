@@ -8,4 +8,5 @@ if n == nAleatory:
     print('O número escolhido foi o {}. Parabéns, você acertou!'.format(nAleatory))
 
 else:
-    print('O número escolhido foi o {}. Você errou! Tente de novo na próxima.'.format(nAleatory))
+    print('O número escolhido foi o {}. O computador venceu!'.format(nAleatory))
+
