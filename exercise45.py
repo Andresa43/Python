@@ -1,12 +1,15 @@
 import random
-
-computer = random.randint(1, 3)
-choices = int(input('Qual é a sua jogada? \n 1 - pedra \n 2 - papel \n 3 - tesoura \n Digite o número correspondente:'))
 itens = ('Pedra', 'Papel', 'Tesoura')
-print('Computador escolheu {} '.format(itens[computer]))
-print('Jogador escolheu {} '.format(itens[choices]))
+computer = random.randint(1, 3)
+print('''Suas opções:
+1 - pedra
+2 - papel
+3 - tesoura''')
+choices = int(input('Qual é a sua jogada? '))
+print('Computador escolheu {} '.format(itens[computer-1]))
+print('Jogador escolheu {}'.format(itens[choices-1]))
+print('-='*20)
 
-print('-=*'*20)
 if choices == 1 and computer == 3:
     print('Você venceu!')
 elif choices == 2 and computer == 1:
