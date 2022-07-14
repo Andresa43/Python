@@ -7,4 +7,6 @@ if n1 > n2:
 elif n2 > n1: 
     print('O segundo valor é o maior')
 else:
-    print('Não existe valor maior, os são iguais')
+    print('Não existe valor maior, os dois são iguais')
+
+
