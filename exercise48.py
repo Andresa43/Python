@@ -1,9 +1,9 @@
-from re import S
-
 
 s = 0
-for c in range (0, 500, 3):
+cont = 0
+for c in range (1, 501, 2):
    if c%3==0:
+    cont += 1
     s += c
-print(s)
+print('Soma de todos os {} solicitados é {} '.format(cont, s))
     
