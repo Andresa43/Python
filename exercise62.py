@@ -1,24 +1,18 @@
+# Melhore o desafio061 , perguntando se ele quer mostrar mais alguns 
+# termos. O programa encerra quando ele disser que quer mostrar 0 zero
+# termos.
 
+termos = 10
+teste = 0
 one_termo = int(input('Digite o primeiro termo da PA: '))
 razao = int(input('Digite a razao da PA: '))
-decimo = one_termo + (10 - 1)*razao 
-resposta = ''
 
-
-print('{} ->'.format(one_termo), end= ' ')
-while decimo > one_termo:
-    one_termo = one_termo + razao
-    print('{} ->'.format(one_termo), end= ' ' )
-print('\n')
-
-resposta = str(input('Deseja mostrar mais termos? [S/0] ')).upper()
-if resposta == 'S':
-    while decimo > one_termo and resposta == 'S':
-        decimo = one_termo + (10 - 1)*razao 
-        one_termo = int(input('Digite o primeiro termo da PA: '))
-        razao = int(input('Digite a razao da PA: '))
+while termos != 0:
+    decimo = one_termo + (termos - 1)*razao
+    print('{} ->'.format(one_termo), end= ' ')
+    while decimo > one_termo:
         one_termo = one_termo + razao
         print('{} ->'.format(one_termo), end= ' ' )
-else:
-    ('PROGRAMA ENCERRADO')
-
+    termos = int(input('\n Digite mais termos ou 0 para encerrar o programa: '))
+    termos = termos+1
+print('PROGRAMA ENCERRADO')
