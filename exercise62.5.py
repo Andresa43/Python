@@ -1,5 +1,5 @@
-# Melhore o desafio061 , perguntando se ele quer mostrar mais alguns 
-# termos. O programa encerra quando ele disser que quer mostrar 0 zero
+# Melhore o desafio061 , perguntando se ele quer mostrar mais alguma 
+# progressão. O programa encerra quando ele disser que quer mostrar 0 zero
 # termos.
 
 resposta = 'S'

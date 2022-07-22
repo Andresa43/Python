@@ -3,7 +3,6 @@
 # termos.
 
 termos = 10
-teste = 0
 one_termo = int(input('Digite o primeiro termo da PA: '))
 razao = int(input('Digite a razao da PA: '))
 
@@ -16,3 +15,6 @@ while termos != 0:
     termos = int(input('\n Digite mais termos ou 0 para encerrar o programa: '))
     termos = termos+1
 print('PROGRAMA ENCERRADO')
+
+
+                   

@@ -14,4 +14,5 @@ for index in range (0, 5):
         if less_weight > weight:
             less_weight = weight
 
+
 print('Maior Peso = {} Menor Peso = {}'.format(greater_weight, less_weight))
