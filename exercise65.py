@@ -14,15 +14,14 @@ while answer == 'S':
     numbers = int(input('Digite um número inteiro: '))
     save = save + numbers
     if cont == 1:
-        higher_number = numbers 
-        smallest_number = numbers 
+        higher_number = smallest_number = numbers 
     else:
         if numbers > higher_number:
             higher_number = numbers
-        if smallest_number > numbers:
+        if numbers < smallest_number:
            smallest_number = numbers
-    answer = str(input('Deseja continuar? [S/N] ')).upper()
-print('Média entre todos os valores é igual a {}'.format(save/cont))
+    answer = str(input('Deseja continuar? [S/N] ')).upper().strip()[0]
+print('Você digitou {} números e a média foi {:.2f}'.format(cont, save/cont))
 print('Maior valor = {} e Menor valor = {}'.format(higher_number, smallest_number))
 
 

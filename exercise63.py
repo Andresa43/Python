@@ -3,26 +3,23 @@
 # de uma sequencia de fibonacci
 
 
+print('-'*30)
+print('Sequência de Fibonacci')
+print('-'*30)
+number = int(input('Quantos termos você quer mostrar?: '))
+resto = 0
+termo1 = 0
+termo2 = 1
+cont = 3
 
-
-number = int(input('Digite um número inteiro: '))
-
-cont = 0
-sucessor = 1
-anterior = 1
-fibo = 0
-
-
-while number != 0:
-    number = number -1
+print('{} - > {}'.format(termo1, termo2), end= ' ')
+while cont <= number:
+    termo3 = termo1 + termo2
+    termo1 = termo2
+    termo2 = termo3
+    print(' -> {}'.format(termo3), end= ' ')
     cont += 1
-    if cont == 1:
-        anterior = sucessor = 1
-    else:
-        fibo = anterior + sucessor
-        sucessor = fibo 
-        fibo = anterior + sucessor
-    print(fibo)
+print('-> FIM')
 
 
 

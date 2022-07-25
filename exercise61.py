@@ -4,13 +4,28 @@
 # estrutura while.
 
 
+
+print('GERADOR DE PA')
+print('-=' * 10)
 one_termo = int(input('Digite o primeiro termo da PA: '))
 razao = int(input('Digite a razao da PA: '))
-decimo = one_termo + (10 - 1)*razao 
+cont = 1
 
-print('{} ->'.format(one_termo), end= ' ')
-while decimo > one_termo:
-    one_termo = one_termo + razao
+while cont <= 10:
     print('{} ->'.format(one_termo), end= ' ')
-print('ACABOU!')
+    one_termo = one_termo + razao
+    cont += 1
+print('ACABOU')
+
+
+
+# one_termo = int(input('Digite o primeiro termo da PA: '))
+# razao = int(input('Digite a razao da PA: '))
+# decimo = one_termo + (10 - 1)*razao 
+
+# print('{} ->'.format(one_termo), end= ' ')
+# while decimo > one_termo:
+#     one_termo = one_termo + razao
+#     print('{} ->'.format(one_termo), end= ' ')
+# print('ACABOU!')
 

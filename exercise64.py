@@ -6,12 +6,22 @@
 # eles (desconsiderando o flag)
 
 
-cont = -1
+cont = 0
 numbers = 0
 save = 0
+
+numbers = int(input('Digite um número inteiro ou \033[31m999\033[m para encerrar o programa: '))
 while numbers != 999:
-    numbers = int(input('Digite um número inteiro ou \033[31m999\033[m para encerrar o programa: '))
     save = (save + numbers)
     cont+=1   
-print('Foram digitados {} números e a soma entre eles é {}'.format(cont, save-999))
+    numbers = int(input('Digite um número inteiro ou \033[31m999\033[m para encerrar o programa: '))
+    print(numbers)
+print('Foram digitados {} números e a soma entre eles é {}'.format(cont, save))
 
+
+
+# while numbers != 999:
+#     numbers = int(input('Digite um número inteiro ou \033[31m999\033[m para encerrar o programa: '))
+#     save = (save + numbers)
+#     cont+=1   
+# print('Foram digitados {} números e a soma entre eles é {}'.format(cont, save-999))
