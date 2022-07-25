@@ -18,3 +18,12 @@ Conteúdos
    * 
    * 
 <!--te-->
+
+## Pré Requisitos: 
+- [GitHub](https://github.com/)
+- [Python](https://www.python.org/downloads/)
+- [VSCode](https://code.visualstudio.com/)
+
+## Referências:
+- [Curso em Vídeo](https://www.youtube.com/watch?v=U_A2kwUfmlw&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0)
+- [Documentação do Python](https://docs.python.org/pt-br/3/)
