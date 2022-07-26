@@ -8,18 +8,22 @@
 # c) Quantas mulheres tem menos de 20 anos.
 
 
+from tkinter import N
+
+
 contIdade = contM = contF = 0
 
 while True:
     print('-'*30)
     print('CADASTRE UMA PESSOA')
     print('-'*30)
+    
     idade = int(input('Digite a idade da pessoa: '))
     sex = str(input('Digite o sexo da pessoa: [F/M] ')).upper().strip()[0]
+    resposta = str(input('Deseja continuar: [S/N]? ')).upper().strip()[0]
     if sex != 'F' and sex != 'M':
         sex = str(input('Digite o sexo da pessoa: [F/M] ')).upper().strip()[0]
-    resposta = str(input('Deseja continuar: [S/N]? ')).upper().strip()[0]
-    if resposta != 'S' and resposta != 'N':
+    if resposta != 'S' and sex != 'N':
         resposta = str(input('Deseja continuar: [S/N]? ')).upper().strip()[0]
     if idade > 18:
         contIdade+=1
