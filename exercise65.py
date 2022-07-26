@@ -26,12 +26,6 @@ print('Maior valor = {} e Menor valor = {}'.format(higher_number, smallest_numbe
 
 
 
-
-
-
-
-
-
 #  if index == 0:
 #     greater_weight = weight 
 #     less_weight = weight 
@@ -40,3 +34,5 @@ print('Maior valor = {} e Menor valor = {}'.format(higher_number, smallest_numbe
 #         greater_weight = weight
 #     if less_weight > weight:
 #         less_weight = weight
+
+
